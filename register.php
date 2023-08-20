@@ -12,7 +12,7 @@
         <input type="text" id="login" name="login" placeholder="login">
         <input type="password" id="password" name="password" placeholder="password">
         <input class="button" type="submit" value="Register"></input>
-        <a class="button" href="login.php">Back to login</a>
+        <a class="button" href="login.php">Sign-in</a>
         <?php
             if(isset($_COOKIE["register_message"])){
                 echo "<p>" . $_COOKIE["register_message"] . "</p>";
