@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --accent: #15ff00;
+    --accent-dark: #0fb300;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono";
+}
+
+h1{
+    color: var(--accent-dark);
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;    
+    background-color: #eee;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    height: fit-content;
+    margin-bottom: 10vw;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    gap: 1.5rem;
+}
+
+#login, #password{
+    line-height: 1.2rem;
+    width: calc(18rem - 1rem - 2px);
+    padding: 0.5rem;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    transition: 125ms ease-in-out;
+    word-break: break-all;
+    word-wrap: break-word;
+    outline: 0;
+}
+
+#login:focus-visible, #password:focus-visible{
+    outline: 0;
+    border-color: var(--accent-dark);
+}
+
+.button {
+    height: 1.5rem;
+    box-sizing: content-box;
+    font-size: 1rem;
+    line-height: 1em;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 0.5rem;
+    transition: 125ms ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 5px 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    outline: 0;
+}
+
+.button:hover {
+    box-shadow: rgba(100, 100, 111, 0.35) 0px 5px 20px 0px;
+}
+
+.button:active {
+    box-shadow: rgba(100, 100, 111, 0.15) 0px 5px 20px 0px;
+}
+
+.button:focus-visible{
+    outline: 0;
+    border-color: var(--accent-dark);
+}
+
+a,a:visited, a:active{
+    text-decoration: none;
+    color: #000;
+}
+p{
+    width: 100%;
+    text-align: center;
+}
