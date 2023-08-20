@@ -13,22 +13,14 @@ function send_form(form, action)
     switch(action)
     {
         case form_actions.Update:
-            console.log("update")
             form.setAttribute("action","note_action/update_note.php");
             break;
 
         case form_actions.Remove:
-            console.log("remove")
             form.setAttribute("action","note_action/remove_note.php");
             break;
 
         case form_actions.Create:
-            console.log('create');
-            console.log()
-            if(!textarea.innerHTML){
-                console.log("omitting")
-                return;
-            }
             form.setAttribute("action","note_action/add_note.php");
         break;
 

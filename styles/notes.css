@@ -11,8 +11,9 @@
     font-family: "Roboto Mono";
 }
 
-body {
-    background-color: #eee;
+body{
+    background-image: none !important;
+    background-color: #eee !important;
 }
 
 header {
@@ -36,8 +37,13 @@ header {
 }
 
 h1 {
-    padding-left: 4rem;
+    padding: 0 4rem;
     color: var(--accent-dark);
+    /* border-right: 1px solid #ccc; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #user {
@@ -60,6 +66,7 @@ h1 {
     justify-content: center;
     align-items: center;
     transition: 125ms ease-in-out;
+    border-left: 1px solid #00000025;
 }
 
 #log_out>img {
@@ -74,11 +81,13 @@ h1 {
 #note-container {
     width: calc(100% - 4rem);
     height: fit-content;
-    margin: 2rem;
+    margin: 4rem 2rem;
     display: flex;
     flex-direction: row;
     gap: 2rem;
     flex-wrap: wrap;
+    transition: 125ms;
+    justify-content: space-between;
 }
 
 .note {
@@ -94,46 +103,15 @@ h1 {
     background-color: #fff;
 }
 
-.button {
-    height: 1.5rem;
-    box-sizing: content-box;
-    line-height: 1em;
-    padding: 0.5rem;
-    cursor: pointer;
-    background-color: #fff;
-    border: 1px solid #aaa;
-    border-radius: 0.5rem;
-    transition: 125ms ease-in-out;
-    box-shadow: rgba(100, 100, 111, 0.5) 0px 5px 20px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-}
-
-.button:hover {
-    box-shadow: rgba(100, 100, 111, 0.35) 0px 5px 20px 0px;
-}
-
-.button:active {
-    box-shadow: rgba(100, 100, 111, 0.15) 0px 5px 20px 0px;
-}
-
-.button:focus-visible{
-    outline: 0;
-    border-color: var(--accent-dark);
-}
-
-
 .textarea {
     line-height: 1.2rem;
-    width: 10rem;
+    width: 15rem;
     padding: 0.5rem;
     resize: none;
     border: 1px solid #ccc;
     border-radius: 0.5rem;
     transition: 125ms ease-in-out;
-    word-break: break-all;
+    word-break: keep-all;
     word-wrap: break-word;
 }
 
@@ -147,4 +125,33 @@ h1 {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
+}
+
+.holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 2rem;
+}
+
+.note_title{
+    outline: 0;
+    border: 0;
+    width: calc(16rem + 2px);
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-bottom: 1px solid var(--accent-dark);
+}
+
+#new_note_button{
+    width: 100%;
+}
+
+input::placeholder{
+    color: #aaaaaa;
+    font-weight: 400;
 }
