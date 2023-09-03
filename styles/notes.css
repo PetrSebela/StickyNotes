@@ -39,7 +39,6 @@ header {
 h1 {
     padding: 0 4rem;
     color: var(--accent-dark);
-    /* border-right: 1px solid #ccc; */
     height: 100%;
     display: flex;
     justify-content: center;
@@ -78,7 +77,7 @@ h1 {
     background-color: #00000025;
 }
 
-#note-container {
+#note_container {
     width: calc(100% - 4rem);
     height: fit-content;
     margin: 4rem 2rem;

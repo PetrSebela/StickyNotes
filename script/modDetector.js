@@ -50,7 +50,7 @@ function check_content_change(form) {
             form.form_element.appendChild(input);
         });
         
-        send_form(form.form_element, form_actions.Update)
+        sendForm(form.form_element, formResolve.Update)
     }
 }
 
